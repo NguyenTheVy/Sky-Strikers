@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Limit
+  - Bullet
+  - Enemy
+  - Limit_2
+  - FxTemporaire
+  - Shield
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1662793159
+    locked: 0
+  - name: Forceground
+    uniqueID: 720892667
+    locked: 0
+  - name: Player
+    uniqueID: 3741951051
+    locked: 0
+  - name: Bullet
+    uniqueID: 2413296453
+    locked: 0
+  - name: Other
+    uniqueID: 1290423765
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
