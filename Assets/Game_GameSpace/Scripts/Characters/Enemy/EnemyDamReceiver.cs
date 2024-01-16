@@ -1,4 +1,4 @@
-using Game_Fly;
+﻿using Game_Fly;
 using System.Collections;
 using System.Collections.Generic;
 using TigerForge;
@@ -18,6 +18,9 @@ public class EnemyDamReceiver : DamageReceiver
     protected Gradient gradient;
     [SerializeField]
     protected Image fill;
+
+    public GameObject[] itemPrefab;
+    public float dropProbability = 10f; // Tỉ lệ phần trăm
     private void Start()
     {
         if (health != null)
@@ -50,7 +53,7 @@ public class EnemyDamReceiver : DamageReceiver
 
     protected override void OnDead()
     {
-        /*SimplePool.Despawn(transform.parent.gameObject);*/
+        
         if (enemyType == EnemyType.Boss)
         {
             GameManager.Instance.IncreaseLevel(GameManager.Instance.levelPlaying);
@@ -58,19 +61,25 @@ public class EnemyDamReceiver : DamageReceiver
             Instantiate(bloodObj, transform.position, Quaternion.identity);
             AudioController.Instance.PlaySound(AudioController.Instance.bossDeath);
             transform.parent.gameObject.SetActive(false);
-
             Invoke("DelayDead", 2.5f);
 
 
         }
-        else if (enemyType == EnemyType.Normal || enemyType == EnemyType.Mini)
+        if (enemyType == EnemyType.Normal)
         {
+            
             Instantiate(bloodObj, transform.position, Quaternion.identity);
             AudioController.Instance.PlaySound(AudioController.Instance.enemyHit);
             transform.parent.gameObject.SetActive(false);
+            if (Random.Range(0f, 100f) <= dropProbability)
+            {
+                Instantiate(itemPrefab[Random.Range(0, itemPrefab.Length)], transform.position, Quaternion.identity);
+            }
 
             WaveSpawn.S_instance.OnEnemyDead?.Invoke();
+            
         }
+        
     }
 
     private void DelayDead()

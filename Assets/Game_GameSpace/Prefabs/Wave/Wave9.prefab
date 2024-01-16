@@ -664,7 +664,7 @@ MonoBehaviour:
   _noise: 0
   Spread: 2.5
   _amount: 20
-  _radius: 0.5
+  _radius: 0.3
   _radiusGrowthMultiplier: 0
   _rotations: 1
   _rings: 3

@@ -10,11 +10,9 @@ public class GamePlayManager : MonoBehaviour
 {
     [SerializeField] Air air;
     public Air Air => air;
-    int count;
-    public int increaseCount()
-    {
-        return count++;
-    }
+
+    public TypeBullet typeBullet;
+
     public void ChangeStateEndGame(LevelResult levelResult)
     {
         switch (levelResult)
@@ -28,7 +26,6 @@ public class GamePlayManager : MonoBehaviour
             default:
                 break;
         }
-        AddressablesUtils.Instance.listWaves.Clear();
     }
 
     public void ChangeStateEndWave()

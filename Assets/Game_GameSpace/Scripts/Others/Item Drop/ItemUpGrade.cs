@@ -1,6 +1,7 @@
 using Game_Fly;
 using System.Collections;
 using System.Collections.Generic;
+using TigerForge;
 using UnityEngine;
 
 public class ItemUpGrade : ItemDropBase
@@ -23,14 +24,14 @@ public class ItemUpGrade : ItemDropBase
         if (collision.CompareTag(TagConst.PLAYER))
         {
             AudioController.Instance.PlaySound(AudioController.Instance.getItem);
-            int count = GameManager.Instance.gamePlayManager.increaseCount();
-            if (count == 2)
+            EventManager.EmitEvent(EventConstants.UPDATE_LV_PLAYER);
+            if (UIGamePlay.Ins.countBullet == 3)
             {
                 AudioController.Instance.PlaySound(AudioController.Instance.upgradeDone);
                 pos_2.gameObject.SetActive(true);
                 pos_3.gameObject.SetActive(true);
             }
-            if (count == 4)
+            if (UIGamePlay.Ins.countBullet == 5)
             {
                 AudioController.Instance.PlaySound(AudioController.Instance.upgradeDone);
                 pos_4.gameObject.SetActive(true);
@@ -38,8 +39,6 @@ public class ItemUpGrade : ItemDropBase
 
             }
             gameObject.SetActive(false);
-
-
         }
     }
 }

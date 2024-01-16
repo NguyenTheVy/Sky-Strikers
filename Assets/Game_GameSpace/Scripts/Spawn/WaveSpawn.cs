@@ -31,7 +31,15 @@ public class WaveSpawn : MonoBehaviour
     {
         OnEnemyDead += CheckCompleteWave;
     }
-    
+
+    private void OnEnable()
+    {
+        if (PlayerDataManager.Instance.GetIndexWave() > 3)
+        {
+            GameManager.Instance.gamePlayManager.typeBullet = TypeBullet.TakeDamage;
+        }
+    }
+
     private void CheckCompleteWave()
     {
         countInvoke++;
@@ -98,5 +106,6 @@ public class WaveSpawn : MonoBehaviour
     {
         countInvoke = 0;
         OnEnemyDead -= CheckCompleteWave;
+        GameManager.Instance.gamePlayManager.typeBullet = TypeBullet.No_TakeDamage;
     }
 }

@@ -1,3 +1,5 @@
+﻿using DG.Tweening;
+using Game_Fly;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,8 +51,18 @@ public class ExampleArmy : MonoBehaviour
     {
         for (var i = 0; i < _spawnedUnits.Count; i++)
         {
-            if (i < _points.Count)
+            if (_points.Count - i == 1)
+            {
                 _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, transform.position + _points[i], _unitSpeed * Time.deltaTime);
+                if(_spawnedUnits[i].transform.position == transform.position + _points[i])
+                {
+                    GameManager.Instance.gamePlayManager.typeBullet = TypeBullet.TakeDamage;
+                }
+            }
+            else
+            {
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, transform.position + _points[i], _unitSpeed * Time.deltaTime);
+            }
         }
     }
 

@@ -15,6 +15,7 @@ public class UIHomeLobby : MonoBehaviour
     public Slider musicSlider, sfxSlider;
     private void Start()
     {
+        Application.targetFrameRate = 60;
         AudioController.Instance.PlayBackgroundMusic();
     }
 

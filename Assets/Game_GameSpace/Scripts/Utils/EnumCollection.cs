@@ -35,10 +35,13 @@ public enum TypeItem
     Hp = 2,
     Shield = 3,
     Upgrade = 4,
-
-
 }
 
+public enum TypeBullet
+{
+    No_TakeDamage,
+    TakeDamage
+}
 
 public enum IdPack
 {

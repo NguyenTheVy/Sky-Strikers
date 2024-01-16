@@ -172,7 +172,7 @@ MonoBehaviour:
   circleCollider2D: {fileID: 0}
   isDead: 0
   hp: 1
-  maxHp: 6
+  maxHp: 5
   bloodObj: {fileID: 1429954232896169633, guid: aaf29ec033ba85b49acb9127e02a6f5b, type: 3}
   enemyType: 0
   health: {fileID: 0}
@@ -206,6 +206,11 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 0}
+  itemPrefab:
+  - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
+  - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}
+  - {fileID: 7207767182235160376, guid: 3c655dcd33b165747b2f2ea41ea39f06, type: 3}
+  dropProbability: 10
 --- !u!1 &9088725112819094457
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,12 +365,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7726462600952048057, guid: f2a4abf7fd8115d4a9f050c62026fa7e, type: 3}
   holderPrefabs: {fileID: 0}
   minShootInterval: 1
-  maxShootInterval: 55
-  itemPrefab:
-  - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
-  - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}
-  - {fileID: 7207767182235160376, guid: 3c655dcd33b165747b2f2ea41ea39f06, type: 3}
-  dropProbability: 30
+  maxShootInterval: 35
 --- !u!95 &9088725114616408384
 Animator:
   serializedVersion: 4

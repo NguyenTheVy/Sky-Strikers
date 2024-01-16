@@ -58,7 +58,7 @@ MonoBehaviour:
   minpPosX: -4
   maxPosX: 4
   posY: 8.5
-  countEnemy: 15
+  countEnemy: 10
 --- !u!114 &6685160716497035550
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -110,8 +110,8 @@ MonoBehaviour:
       Data: 4|WaveData, Assembly-CSharp
     - Name: wave
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
-        mscorlib
+      Data: 5|MS.Internal.Xml.XPath.ClonableStack`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+        System.Xml
     - Name: 
       Entry: 12
       Data: 6

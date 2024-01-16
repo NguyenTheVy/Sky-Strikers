@@ -15,8 +15,7 @@ public class Enemy : BaseEnemy
     private float timeToShoot;
     private float nextShootTime;
 
-    public GameObject[] itemPrefab;
-    public float dropProbability = 30f; // Tỉ lệ phần trăm
+    
 
     void Start()
     {
@@ -28,17 +27,15 @@ public class Enemy : BaseEnemy
     protected override void FireBullet()
     {
         
-        //_timeBtwFire -= Time.deltaTime;
+       
         if (Time.time > timeToShoot)
         {
-            //_timeBtwFire = timeBtwFire;
+      
             anim.SetBool("Shooting", true);
             SetNextShootTime();
-
-            /*GameObject bulletClone = Instantiate(bulletPrefab, firePos.position, Quaternion.identity);*/
+            
             SimplePool.Spawn(bulletPrefab, firePos.position, Quaternion.identity);
-            /*Rigidbody2D rb = bulletClone.GetComponent<Rigidbody2D>();
-            rb.AddForce(Vector2.down * bulletForce, ForceMode2D.Impulse);*/
+           
         }
     }
 
@@ -55,14 +52,7 @@ public class Enemy : BaseEnemy
         anim.SetBool("Shooting", false);
     }
 
-    private void OnDisable()
-    {
-        // Kiểm tra xác suất rơi vật phẩm
-        if (Random.Range(0f, 100f) <= dropProbability)
-        {
-            Instantiate(itemPrefab[Random.Range(0, itemPrefab.Length)], transform.position, Quaternion.identity);
-        }
-    }
+
 
 
 

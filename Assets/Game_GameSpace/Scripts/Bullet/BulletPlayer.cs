@@ -8,11 +8,11 @@ public class BulletPlayer : BaseBullet
 {
     [SerializeField]
     protected GameObject effect;
-    
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+        if (GameManager.Instance.gamePlayManager.typeBullet == TypeBullet.No_TakeDamage) return;
         if (collision.CompareTag(TagConst.ENEMY))
         {
             this.Send(collision.transform);
