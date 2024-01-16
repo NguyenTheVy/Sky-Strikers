@@ -11,7 +11,10 @@ public class BulletPlayer : BaseBullet
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag(TagConst.LIMIT_2))
+        {
+            this.Limit();
+        }
         if (GameManager.Instance.gamePlayManager.typeBullet == TypeBullet.No_TakeDamage) return;
         if (collision.CompareTag(TagConst.ENEMY))
         {
@@ -19,10 +22,7 @@ public class BulletPlayer : BaseBullet
             
             this.DestroyBullet();
         }
-        if (collision.CompareTag(TagConst.LIMIT_2))
-        {
-            this.Limit();
-        }
+        
     }
 
 

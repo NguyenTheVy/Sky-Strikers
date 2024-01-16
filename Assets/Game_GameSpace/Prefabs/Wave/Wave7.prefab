@@ -87,6 +87,7 @@ MonoBehaviour:
   boxFormation: {fileID: 0}
   radialFormation: {fileID: 6114015517474544224}
   asteroidSpawner: {fileID: 0}
+  miniBoss: {fileID: 0}
 --- !u!1 &6114015517474544230
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +160,7 @@ MonoBehaviour:
   _formation: {fileID: 0}
   _unitPrefab: {fileID: 426901218973755858, guid: e4b68654436469241bbd7e8447d489c6, type: 3}
   _unitPrefab1: {fileID: 5843261774129119237, guid: 58ac751692edc1f449f7024b45f68551, type: 3}
-  _unitSpeed: 4
+  _unitSpeed: 3
   _spawnedUnits: []
   _points: []
   spawnDelay: 0.5

@@ -52,7 +52,7 @@ public class UIGamePlay : UICanvas
 
     public void UpdateLVPlayer()
     {
-        if (countBullet > 5) return;
+        if (countBullet >= 5) return;
         countBullet++;
         txtLevel.text = countBullet.ToString();
     }

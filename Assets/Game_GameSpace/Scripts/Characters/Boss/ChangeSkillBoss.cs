@@ -107,4 +107,9 @@ public class ChangeSkillBoss : MonoBehaviour
             shotCtrl.StartShotRoutine();
         }
     }
+
+    private void OnDisable()
+    {
+        StopCoroutine(StartShot());
+    }
 }

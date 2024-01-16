@@ -24,9 +24,10 @@ public class PlayerDamReceiver : DamageReceiver
     protected override void OnDead()
     {
         Instantiate(bloodObj, transform.position, Quaternion.identity);
+        AudioController.Instance.PlaySound(AudioController.Instance.gameover);
         transform.parent.gameObject.SetActive(false);
         GameManager.Instance.gamePlayManager.ChangeStateEndGame(LevelResult.Lose);
-        /*SimplePool.Despawn(transform.parent.gameObject);*/
+        
     }
 
     public override void Deduct(float deduct)

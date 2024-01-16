@@ -61,7 +61,7 @@ public class EnemyDamReceiver : DamageReceiver
             Instantiate(bloodObj, transform.position, Quaternion.identity);
             AudioController.Instance.PlaySound(AudioController.Instance.bossDeath);
             transform.parent.gameObject.SetActive(false);
-            Invoke("DelayDead", 2.5f);
+            Invoke("DelayDead", 3f);
 
 
         }
