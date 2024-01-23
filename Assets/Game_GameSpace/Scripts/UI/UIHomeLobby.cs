@@ -28,6 +28,7 @@ public class UIHomeLobby : MonoBehaviour
 
     public void CloseSetting()
     {
+        
         settingPopup.SetActive(false);
         AudioController.Instance.PlaySound(AudioController.Instance.click);
 
@@ -76,7 +77,7 @@ public class UIHomeLobby : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("quit");
+        
         Application.Quit();
     }
 
