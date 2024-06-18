@@ -5,7 +5,7 @@ using UnityEngine;
 public class Presenter : MonoBehaviour
 {
     
-    public GameObject prefabPlayer;
+    private GameObject prefabPlayer;
 
     private GameObject player;
     public float timeDelay;
