@@ -348,10 +348,10 @@ MonoBehaviour:
   _formation: {fileID: 0}
   _unitPrefab: {fileID: 7947148800178226737, guid: 61524b44938d4c14d87d76a57816adcb, type: 3}
   _unitPrefab1: {fileID: 7209616943056597391, guid: f8974afa9a896434f988801cb65964c8, type: 3}
-  _unitSpeed: 5
+  _unitSpeed: 3
   _spawnedUnits: []
   _points: []
-  spawnDelay: 0.3
+  spawnDelay: 0.5
 --- !u!114 &3817461360717010333
 MonoBehaviour:
   m_ObjectHideFlags: 0
