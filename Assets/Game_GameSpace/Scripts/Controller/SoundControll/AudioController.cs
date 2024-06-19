@@ -27,6 +27,9 @@ public class AudioController : Singleton<AudioController>
     public AudioClip bossStart;
     public AudioClip gameover;
     public AudioClip win;
+    public AudioClip boughtItem;
+    public AudioClip cantBoughtItem;
+
 
     public AudioClip click; 
 

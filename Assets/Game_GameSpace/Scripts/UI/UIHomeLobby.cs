@@ -10,7 +10,7 @@ using TigerForge;
 public class UIHomeLobby : MonoBehaviour
 {
     [SerializeField]
-    private GameObject settingPopup, infoPopup, quitPopup, levelPopup, shopPopup, selectionPopup;
+    private GameObject settingPopup, infoPopup, quitPopup, levelPopup, shopPopup;
 
     public Slider musicSlider, sfxSlider;
     private void Start()
@@ -88,16 +88,7 @@ public class UIHomeLobby : MonoBehaviour
         shopPopup.SetActive(false);
         AudioController.Instance.PlaySound(AudioController.Instance.click);
     }
-    public void OpenSelectionPopup()
-    {
-        selectionPopup.SetActive(true);
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
-    }
-    public void CloseSelectionPopup()
-    {
-        selectionPopup.SetActive(false);
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
-    }
+    
 
     public void SfxVolume()
     {

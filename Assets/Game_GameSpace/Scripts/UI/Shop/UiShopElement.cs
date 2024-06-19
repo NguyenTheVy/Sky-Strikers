@@ -6,18 +6,21 @@ using UnityEngine.UI;
 
 public class UiShopElement : MonoBehaviour
 {
-    public int id;
+   
     public int cost;
     public TextMeshProUGUI costTxt;
     public Button purchasBtn;
     public GameObject coinImg;
+    public int id;
 
-    /*private GameObject prefab;
-    private GameObject airItem;*/
+    private string path = "ShopItem/P_";
+    private GameObject prefab;
+    private GameObject airItem;
 
     private void Awake()
     {
-        purchasBtn.onClick.AddListener(OnPurchase);
+        if(purchasBtn != null)
+            purchasBtn.onClick.AddListener(OnPurchase);
         
     }
 
@@ -25,18 +28,19 @@ public class UiShopElement : MonoBehaviour
     {
         this.id = id;
         cost = id * 100;
-        //InitAir();
+        InitAir();
         UpdateView();
     }
 
-    /*private void InitAir()
+    private void InitAir()
     {
-        prefab = Resources.Load<GameObject>($"Air/{id}");
+        prefab = Resources.Load<GameObject>(path + id);
         airItem = Instantiate(prefab, transform);
-    }*/
+    }
 
     public void UpdateView()
     {
+        
         // check xem air co dang su huu khong
         var isOwned = PlayerData.IsOwnedAirWithId(id);
 
@@ -60,8 +64,20 @@ public class UiShopElement : MonoBehaviour
     }
     public void OnPurchase()
     {
-        PlayerData.AddAir(id);
-        UpdateView();
+        var canPurchase = PlayerData.IsEnoughMoney(cost);
+        if(canPurchase)
+        {
+            PlayerData.AddAir(id);
+            UpdateView();
+            PlayerData.SubCoin(cost);
+            AudioController.Instance.PlaySound(AudioController.Instance.boughtItem);
+        }
+        else
+        {
+            Debug.Log("thieu tien");
+            AudioController.Instance.PlaySound(AudioController.Instance.cantBoughtItem);
+
+        }
     }
 
     public void ChangeButtonColor()
