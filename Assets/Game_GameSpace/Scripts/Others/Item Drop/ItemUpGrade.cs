@@ -10,8 +10,13 @@ public class ItemUpGrade : ItemDropBase
     protected override void Start()
     {
         base.Start();
+    }
+
+    private void OnEnable()
+    {
         initPos();
     }
+
     private void initPos()
     {
         pos_2 = GameManager.Instance.gamePlayManager.Air.firePos_2;

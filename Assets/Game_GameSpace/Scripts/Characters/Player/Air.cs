@@ -20,6 +20,15 @@ public class Air : BaseAir
 
     float _timeBtwFire;
 
+    private void OnEnable ()
+    {
+        InitPlayer();
+    }
+
+    private void InitPlayer()
+    {
+        GameManager.Instance.gamePlayManager.Air = this;
+    }
 
     protected override void FireBullet()
     {

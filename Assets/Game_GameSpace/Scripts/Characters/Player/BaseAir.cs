@@ -10,7 +10,8 @@ public class BaseAir : MonoBehaviour
     private Camera mainCamera;
     private float minX, maxX, minY, maxY;
     private float playerHalfWidth, playerHalfHeight;
-
+    
+    
     private void OnMouseDown()
     {
         difference = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
@@ -28,8 +29,8 @@ public class BaseAir : MonoBehaviour
 
     private void Start()
     {
-        
 
+        
         mainCamera = Camera.main;
         // Lấy kích thước của người chơi (Player)
         SpriteRenderer playerRenderer = GetComponent<SpriteRenderer>();
@@ -40,6 +41,8 @@ public class BaseAir : MonoBehaviour
         CalculateCameraBounds();
     }
 
+    
+    
     private void Update()
     {
         CheckLimitCam();

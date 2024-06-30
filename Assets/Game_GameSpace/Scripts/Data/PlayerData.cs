@@ -23,7 +23,7 @@ public static class PlayerData
             {
                 airList = new List<int>() { airDefaultId },
                 currentAir = airDefaultId,
-                coin = 200,
+                coin = 1000,
             };
 
             SaveData();

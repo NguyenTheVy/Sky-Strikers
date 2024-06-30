@@ -9,9 +9,11 @@ using UnityEngine.Events;
 public class GamePlayManager : MonoBehaviour
 {
     [SerializeField] Air air;
-    public Air Air => air;
+    //public Air Air => air;
 
     public TypeBullet typeBullet;
+
+    public Air Air { get => air; set => air = value; }
 
     public void ChangeStateEndGame(LevelResult levelResult)
     {

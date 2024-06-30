@@ -10,6 +10,7 @@ TagManager:
   - Limit_2
   - FxTemporaire
   - Shield
+  - PlayerItem
   layers:
   - Default
   - TransparentFX

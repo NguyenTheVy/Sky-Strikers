@@ -253,12 +253,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5302112524357322236}
   - component: {fileID: 5302112524357322239}
-  - component: {fileID: 5302112524357322238}
-  - component: {fileID: 5302112524357322237}
-  - component: {fileID: 5302112524357322234}
-  - component: {fileID: 5302112524357322235}
+  - component: {fileID: 7043780786665405575}
+  - component: {fileID: 6791430420517453799}
+  - component: {fileID: 7997431093396450916}
+  - component: {fileID: -7106849336442794450}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PX4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 5302112524357322176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -7, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: -553016245
   m_SortingLayer: -3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3c018f30238b9f74e873228e7e4affdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 690fd5d93fdb5c24d97828aa5ba171d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -336,7 +336,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5302112524357322238
+--- !u!95 &7043780786665405575
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5302112524357322176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bacbc49e28344f4ab18f3cb730270c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6791430420517453799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,28 +377,7 @@ MonoBehaviour:
   Sheild: {fileID: 2571425131317875228}
   bulletPrefab: {fileID: 2036567212849793643, guid: 409223644e8d62d4f91b32915ffa8b83, type: 3}
   timeBtwFire: 0.2
---- !u!95 &5302112524357322237
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5302112524357322176}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f3af964e1f409a947b6be5e434e57a3e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!50 &5302112524357322234
+--- !u!50 &7997431093396450916
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &5302112524357322235
+--- !u!70 &-7106849336442794450
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -798,25 +798,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5302112524357322236}
     m_Modifications:
-    - target: {fileID: 1717819110610704807, guid: bcc808caada023445a8865328cf6175d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717819110610704807, guid: bcc808caada023445a8865328cf6175d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 4475726708237890041, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_Name
       value: Shield
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475726708237890041, guid: bcc808caada023445a8865328cf6175d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_LocalPosition.x
