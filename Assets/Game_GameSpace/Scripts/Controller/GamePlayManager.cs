@@ -12,6 +12,7 @@ public class GamePlayManager : MonoBehaviour
     //public Air Air => air;
 
     public TypeBullet typeBullet;
+    public bool isWin = false;
 
     public Air Air { get => air; set => air = value; }
 
@@ -34,7 +35,7 @@ public class GamePlayManager : MonoBehaviour
     {
         int index = PlayerDataManager.Instance.GetIndexWave() + 1;
         PlayerDataManager.Instance.SetIndexWave(index);
-        GameManager.Instance.UiController.OpenUiWin();
+        GameManager.Instance.UiController.OpenUiWinWave();
         GameManager.Instance.isStartGame = true;
     }
 
@@ -42,7 +43,8 @@ public class GamePlayManager : MonoBehaviour
     {
         //int index = PlayerDataManager.Instance.GetIndexWave() + 1;
         //PlayerDataManager.Instance.SetIndexWave(index);
-        GameManager.Instance.UiController.OpenUiWin();
+        GameManager.Instance.UiController.OpenUiWinWave();
+        
         GameManager.Instance.IncreaseLevel(GameManager.Instance.levelPlaying);
         GameManager.Instance.isStartGame = true;
 

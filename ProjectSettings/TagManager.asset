@@ -51,6 +51,9 @@ TagManager:
   - name: Forceground
     uniqueID: 720892667
     locked: 0
+  - name: Enemy
+    uniqueID: 3230913903
+    locked: 0
   - name: Player
     uniqueID: 3741951051
     locked: 0

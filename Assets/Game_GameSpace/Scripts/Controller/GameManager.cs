@@ -34,6 +34,7 @@ namespace Game_Fly
         private void Awake()
         {
             Instance = this;
+            gamePlayManager.isWin = false;
             levelPlaying = DataLevel.GetLevel();
             Profile = new Profile();
             AudioController.Instance.PlayBackgroundMusic();

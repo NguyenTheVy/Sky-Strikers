@@ -351,7 +351,7 @@ MonoBehaviour:
   _unitSpeed: 3
   _spawnedUnits: []
   _points: []
-  spawnDelay: 0.5
+  spawnDelay: 0.3
 --- !u!114 &3817461360717010333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 720892667
-  m_SortingLayer: -4
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c27bd17bbf4a7364e830b053e4003527, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

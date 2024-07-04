@@ -375,7 +375,7 @@ MonoBehaviour:
   firePos_4: {fileID: 2267864597367746881}
   firePos_5: {fileID: 1628750804695045201}
   Sheild: {fileID: 2571425131317875228}
-  bulletPrefab: {fileID: 2036567212849793643, guid: 409223644e8d62d4f91b32915ffa8b83, type: 3}
+  bulletPrefab: {fileID: 638478419159994681, guid: 5fa7432c92649304ba111c033b705c25, type: 3}
   timeBtwFire: 0.2
 --- !u!50 &1737353740907458619
 Rigidbody2D:
@@ -695,7 +695,7 @@ MonoBehaviour:
   circleCollider2D: {fileID: 0}
   isDead: 0
   hp: 0
-  maxHp: 10
+  maxHp: 7
   bloodObj: {fileID: 1141330259687333427, guid: 6718dc24203da53468af9ada8fef7d6d, type: 3}
 --- !u!1 &7243798192241584529
 GameObject:
@@ -812,7 +812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4475726708237890041, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_RootOrder

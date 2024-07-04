@@ -5,9 +5,10 @@ using UnityEngine;
 public class UiManager : MonoBehaviour
 {
     public UiMainLobby UiMainLobby;
-    public UIWin UiWin;
+    public UiWinWave UiWinWave;
     public UiLose UiLose;
     public UIGamePlay UiGamePlay;
+    public UIVictory UiVictory;
 
     public void Init()
     {
@@ -23,13 +24,18 @@ public class UiManager : MonoBehaviour
         UiGamePlay.Show(true);
     }
 
-    public void OpenUiWin()
+    public void OpenUiWinWave()
     {
-        UiWin.Show(true);
+        UiWinWave.Show(true);
     }
 
     public void OpenUiLose()
     {
         UiLose.Show(true);
+    }
+
+    public void OpenUiVictory()
+    {
+        UiVictory.Show(true);
     }
 }

@@ -6,15 +6,24 @@ public class ItemSheild : ItemDropBase
 {
     [SerializeField] GameObject shield;
 
-    /*protected override void Start()
-    {
-        base.Start();
-        initSheild();
-    }*/
+    
 
     private void OnEnable()
     {
         initSheild();
+    }
+
+    protected override void Start()
+    {
+        base.Start();
+        player = GameObject.FindWithTag("PlayerItem"); // Giả sử máy bay có tag "Player"
+        if (player != null)
+        {
+            // Gắn Shield vào Player
+            transform.SetParent(player.transform);
+            transform.localPosition = Vector3.zero;
+            StartCoroutine(RemoveShieldAfterDuration());
+        }
     }
 
     private void initSheild()
@@ -33,17 +42,7 @@ public class ItemSheild : ItemDropBase
     public float shieldDuration = 5.0f; // Thời gian shield tồn tại
     private GameObject player;
 
-    protected override void Start()
-    {
-        player = GameObject.FindWithTag("PlayerItem"); // Giả sử máy bay có tag "Player"
-        if (player != null)
-        {
-            // Gắn Shield vào Player
-            transform.SetParent(player.transform);
-            transform.localPosition = Vector3.zero;
-            StartCoroutine(RemoveShieldAfterDuration());
-        }
-    }
+    
 
     private IEnumerator RemoveShieldAfterDuration()
     {

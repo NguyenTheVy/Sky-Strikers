@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class PlayerSelection : MonoBehaviour
 {
-    //public int currentAirIndex;
-    //public List<int> airList;
     public int currentAir;
     public GameObject[] prefabPlayer;
     public GameObject player;

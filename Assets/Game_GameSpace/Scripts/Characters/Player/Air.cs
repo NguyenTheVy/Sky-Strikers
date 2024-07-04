@@ -33,6 +33,7 @@ public class Air : BaseAir
     protected override void FireBullet()
     {
         if (!GameManager.Instance.isStartGame) return;
+        if (GameManager.Instance.gamePlayManager.isWin) return;
         _timeBtwFire -= Time.deltaTime;
         if (_timeBtwFire < 0)
         {

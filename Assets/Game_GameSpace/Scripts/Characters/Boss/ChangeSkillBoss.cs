@@ -111,5 +111,6 @@ public class ChangeSkillBoss : MonoBehaviour
     private void OnDisable()
     {
         StopCoroutine(StartShot());
+        CancelInvoke(nameof(ChangeSkillRuntime));
     }
 }

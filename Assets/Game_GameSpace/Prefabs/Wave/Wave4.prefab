@@ -86,7 +86,7 @@ Transform:
   m_GameObject: {fileID: 680752703212058404}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -107,10 +107,10 @@ MonoBehaviour:
   _noise: 0
   Spread: 1.5
   _unitWidth: 5
-  _unitDepth: 5
+  _unitDepth: 4
   _hollow: 0
   _nthOffset: 0
-  countEnemy: 25
+  countEnemy: 20
 --- !u!114 &680752703212058407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,10 +126,10 @@ MonoBehaviour:
   _formation: {fileID: 0}
   _unitPrefab: {fileID: 8267822402229036031, guid: 66eb8bb1603d2d149bfbfdd2d4134003, type: 3}
   _unitPrefab1: {fileID: 3710537429230514713, guid: 8ab348f63a97105498a6e44eb191d6a6, type: 3}
-  _unitSpeed: 3
+  _unitSpeed: 4
   _spawnedUnits: []
   _points: []
-  spawnDelay: 0.5
+  spawnDelay: 0.3
 --- !u!114 &680752703212058406
 MonoBehaviour:
   m_ObjectHideFlags: 0

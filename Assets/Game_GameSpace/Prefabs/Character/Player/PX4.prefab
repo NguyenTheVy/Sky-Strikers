@@ -375,7 +375,7 @@ MonoBehaviour:
   firePos_4: {fileID: 2267864597367746881}
   firePos_5: {fileID: 1628750804695045201}
   Sheild: {fileID: 2571425131317875228}
-  bulletPrefab: {fileID: 2036567212849793643, guid: 409223644e8d62d4f91b32915ffa8b83, type: 3}
+  bulletPrefab: {fileID: 5202190514075684742, guid: 980618ced84256149bf0144b7a838e63, type: 3}
   timeBtwFire: 0.2
 --- !u!50 &7997431093396450916
 Rigidbody2D:
@@ -801,6 +801,10 @@ PrefabInstance:
     - target: {fileID: 4475726708237890041, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_Name
       value: Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475726708237890041, guid: bcc808caada023445a8865328cf6175d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_LocalPosition.x

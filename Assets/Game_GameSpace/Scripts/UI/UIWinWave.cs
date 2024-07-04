@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIWin : UICanvas
+public class UiWinWave : UICanvas
 {
     [Title("Button")] [SerializeField] private Button btnHide;
     [SerializeField] private Button btnPlayGame;

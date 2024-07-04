@@ -56,12 +56,16 @@ public class EnemyDamReceiver : DamageReceiver
         
         if (enemyType == EnemyType.Boss)
         {
+            GameManager.Instance.gamePlayManager.isWin = true;
+
             GameManager.Instance.IncreaseLevel(GameManager.Instance.levelPlaying);
             GameManager.Instance.isStartGame = true;
             Instantiate(bloodObj, transform.position, Quaternion.identity);
             AudioController.Instance.PlaySound(AudioController.Instance.bossDeath);
             transform.parent.gameObject.SetActive(false);
-            Invoke("DelayDead", 3f);
+
+            //Invoke("DelayDead", 3f);
+            GameManager.Instance.UiController.OpenUiVictory();
 
 
         }
