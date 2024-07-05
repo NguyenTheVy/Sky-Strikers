@@ -2290,9 +2290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 300
   m_EffectMaterial: {fileID: 2100000, guid: 9dc7e810a87b444ab96919f3215c2fe5, type: 2}
-  m_EffectFactor: 0.5
-  m_Width: 0.25
-  m_Rotation: 32
+  m_EffectFactor: 0.25
+  m_Width: 0.154
+  m_Rotation: -140
   m_Softness: 1
   m_Brightness: 1
   m_Gloss: 1
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   m_Player:
     play: 1
     initialPlayDelay: 0
-    duration: 1.5
+    duration: 2
     loop: 1
     loopDelay: 0
     updateMode: 0
