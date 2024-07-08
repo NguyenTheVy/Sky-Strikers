@@ -409,7 +409,6 @@ GameObject:
   - component: {fileID: 5826900051286048763}
   - component: {fileID: 4447933706552205178}
   - component: {fileID: 7608245762579063323}
-  - component: {fileID: 5609662620984465653}
   m_Layer: 0
   m_Name: Boss_4
   m_TagString: Untagged
@@ -509,134 +508,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5609662620984465653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948541789902860105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -333801856, guid: aa0b1eebb5db27a419fa4564bbe5c9c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateType: 0
-  isSpeedBased: 0
-  hasOnStart: 0
-  hasOnPlay: 0
-  hasOnUpdate: 0
-  hasOnStepComplete: 0
-  hasOnComplete: 0
-  hasOnTweenCreated: 0
-  hasOnRewind: 0
-  onStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onPlay:
-    m_PersistentCalls:
-      m_Calls: []
-  onUpdate:
-    m_PersistentCalls:
-      m_Calls: []
-  onStepComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onTweenCreated:
-    m_PersistentCalls:
-      m_Calls: []
-  onRewind:
-    m_PersistentCalls:
-      m_Calls: []
-  delay: 1
-  duration: 4
-  easeType: 1
-  easeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  loops: -1
-  id: 
-  loopType: 1
-  orientType: 0
-  lookAtTransform: {fileID: 0}
-  lookAtPosition: {x: 0, y: 0, z: 0}
-  lookAhead: 0.01
-  autoPlay: 1
-  autoKill: 1
-  relative: 0
-  isLocal: 0
-  isClosedPath: 1
-  pathResolution: 10
-  pathMode: 2
-  lockRotation: 0
-  assignForwardAndUp: 0
-  forwardDirection: {x: 0, y: 0, z: 1}
-  upDirection: {x: 0, y: 1, z: 0}
-  tweenRigidbody: 0
-  wps:
-  - {x: -2.050124, y: 2.962302, z: 0}
-  - {x: 2.112707, y: 2.9691367, z: 0}
-  fullWps: []
-  path:
-    wpLengths:
-    - 0
-    - 2.0963273
-    - 4.1628366
-    - 2.1561942
-    wps:
-    - {x: 0, y: 3.4, z: 0}
-    - {x: -2.050124, y: 2.962302, z: 0}
-    - {x: 2.112707, y: 2.9691367, z: 0}
-    - {x: 0, y: 3.4, z: 0}
-    type: 0
-    subdivisionsXSegment: 10
-    subdivisions: 40
-    controlPoints: []
-    length: 8.415358
-    isFinalized: 1
-    timesTable:
-    - 0
-    - 0.24910733
-    - 0.7437787
-    - 1
-    lengthsTable: []
-  inspectorMode: 0
-  pathType: 0
-  handlesType: 0
-  livePreview: 1
-  handlesDrawMode: 0
-  perspectiveHandleSize: 0.5
-  showIndexes: 1
-  showWpLength: 0
-  pathColor: {r: 1, g: 1, b: 1, a: 0.5}
-  lastSrcPosition: {x: 0, y: 3.4, z: 0}
-  lastSrcRotation: {x: 0, y: 0, z: 0, w: 1}
-  wpsDropdown: 0
-  dropToFloorOffset: 0
 --- !u!1 &4307837690088997314
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,9 +841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1899707585028150385}
   - component: {fileID: 3594430637396701019}
-  - component: {fileID: 3247028934719806992}
   - component: {fileID: 7773408849393319289}
-  - component: {fileID: 2690844332410113896}
+  - component: {fileID: 616224080266615955}
   m_Layer: 0
   m_Name: DamageReceiver
   m_TagString: Enemy
@@ -1022,41 +892,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3247028934719806992
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381320058178624251}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
 --- !u!114 &7773408849393319289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +907,7 @@ MonoBehaviour:
   circleCollider2D: {fileID: 0}
   isDead: 0
   hp: 1
-  maxHp: 1500
+  maxHp: 2000
   bloodObj: {fileID: 2708598583397607911, guid: a7c083b1847d15246929eaa224aba021, type: 3}
   enemyType: 1
   health: {fileID: 8011033902366394348}
@@ -1107,13 +942,14 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 3041644495400183522}
+  cost: 500
   itemPrefab:
   - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
   - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}
   - {fileID: 7207767182235160376, guid: 3c655dcd33b165747b2f2ea41ea39f06, type: 3}
   dropProbability: 1
---- !u!61 &2690844332410113896
-BoxCollider2D:
+--- !u!58 &616224080266615955
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1144,19 +980,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0047774017, y: 0.018160522}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.8757892, y: 1.4372233}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
 --- !u!1 &8698255009202748366
 GameObject:
   m_ObjectHideFlags: 0

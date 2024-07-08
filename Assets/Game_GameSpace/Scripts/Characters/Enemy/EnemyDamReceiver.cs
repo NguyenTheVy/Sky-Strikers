@@ -18,6 +18,9 @@ public class EnemyDamReceiver : DamageReceiver
     protected Gradient gradient;
     [SerializeField]
     protected Image fill;
+    [SerializeField] 
+    protected int cost;
+
 
     public GameObject[] itemPrefab;
     public float dropProbability = 10f; // Tỉ lệ phần trăm
@@ -64,6 +67,7 @@ public class EnemyDamReceiver : DamageReceiver
             AudioController.Instance.PlaySound(AudioController.Instance.bossDeath);
             transform.parent.gameObject.SetActive(false);
 
+            PlayerData.AddCoin(cost);
             //Invoke("DelayDead", 3f);
             GameManager.Instance.UiController.OpenUiVictory();
 

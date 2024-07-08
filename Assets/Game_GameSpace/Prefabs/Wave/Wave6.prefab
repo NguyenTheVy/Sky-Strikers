@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023836902328ad948a96ad183976eccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossPrefab: {fileID: 1948541789902860105, guid: bac13ddb49477674299df7b95940b70b, type: 3}
+  bossPrefab: {fileID: 8184854769375582803, guid: a792232616003a2488a8a5385380295e, type: 3}
   miniBoss: {fileID: 0}
   effect: {fileID: 5642766282230003982, guid: 673efd0319df77640ae5ffca64963476, type: 3}
   pos1: {fileID: 3850547512349119163}

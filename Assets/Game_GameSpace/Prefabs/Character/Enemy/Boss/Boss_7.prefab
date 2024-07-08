@@ -385,7 +385,6 @@ GameObject:
   - component: {fileID: 3071481293446889119}
   - component: {fileID: 6558021763204834192}
   - component: {fileID: 1418454534731125838}
-  - component: {fileID: 1365344691235144778}
   m_Layer: 0
   m_Name: DamageReceiver
   m_TagString: Enemy
@@ -442,7 +441,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553934741330538533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -467,9 +466,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.081233025}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 1.418767
 --- !u!114 &1418454534731125838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,83 +519,12 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 5950759796801538089}
+  cost: 500
   itemPrefab:
   - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
   - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}
   - {fileID: 7207767182235160376, guid: 3c655dcd33b165747b2f2ea41ea39f06, type: 3}
   dropProbability: 1
---- !u!68 &1365344691235144778
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553934741330538533}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.113474295, y: 1.6796105}
-  - {x: -0.42552614, y: 1.0378633}
-  - {x: -0.98277795, y: 1.6931939}
-  - {x: -1.4335563, y: 0.72402644}
-  - {x: -2.4254797, y: 0.5856209}
-  - {x: -2.5668461, y: 0.18233204}
-  - {x: -3.314529, y: 0.5633683}
-  - {x: -3.7991273, y: 0.37578607}
-  - {x: -3.1315882, y: 0.26524925}
-  - {x: -2.7921631, y: -0.104328394}
-  - {x: -2.2903805, y: -0.091843605}
-  - {x: -1.7340002, y: 0.010142803}
-  - {x: -1.5781267, y: -0.037046194}
-  - {x: -1.3643876, y: -0.67961645}
-  - {x: -0.6322326, y: -0.9108944}
-  - {x: -0.12828882, y: -0.99075997}
-  - {x: -0.004097156, y: -1.0769455}
-  - {x: 0.1868118, y: -0.9629638}
-  - {x: 0.6429901, y: -0.9135753}
-  - {x: 1.3483608, y: -0.89093685}
-  - {x: 1.5532635, y: -0.03735137}
-  - {x: 2.6539803, y: -0.1383934}
-  - {x: 2.762254, y: -0.09802055}
-  - {x: 3.276207, y: 0.30671167}
-  - {x: 3.6788607, y: 0.30381227}
-  - {x: 3.6485415, y: 0.50803065}
-  - {x: 3.1926148, y: 0.5073395}
-  - {x: 2.5726078, y: 0.19794726}
-  - {x: 2.401061, y: 0.54467607}
-  - {x: 1.8112495, y: 0.6838126}
-  - {x: 0.98131204, y: 1.6833134}
-  - {x: 0.45698756, y: 1.1435194}
-  - {x: -0.12947893, y: 1.705967}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1875246159388382168
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +651,6 @@ GameObject:
   - component: {fileID: 7097283898707211115}
   - component: {fileID: 5902503293573457365}
   - component: {fileID: 1521132424959790466}
-  - component: {fileID: 8026955539073588869}
   m_Layer: 0
   m_Name: Boss_7
   m_TagString: Untagged
@@ -823,134 +750,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8026955539073588869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3235027623319082934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -333801856, guid: aa0b1eebb5db27a419fa4564bbe5c9c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateType: 0
-  isSpeedBased: 0
-  hasOnStart: 0
-  hasOnPlay: 0
-  hasOnUpdate: 0
-  hasOnStepComplete: 0
-  hasOnComplete: 0
-  hasOnTweenCreated: 0
-  hasOnRewind: 0
-  onStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onPlay:
-    m_PersistentCalls:
-      m_Calls: []
-  onUpdate:
-    m_PersistentCalls:
-      m_Calls: []
-  onStepComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onTweenCreated:
-    m_PersistentCalls:
-      m_Calls: []
-  onRewind:
-    m_PersistentCalls:
-      m_Calls: []
-  delay: 2
-  duration: 8
-  easeType: 1
-  easeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  loops: -1
-  id: 
-  loopType: 1
-  orientType: 0
-  lookAtTransform: {fileID: 0}
-  lookAtPosition: {x: 0, y: 0, z: 0}
-  lookAhead: 0.01
-  autoPlay: 1
-  autoKill: 1
-  relative: 0
-  isLocal: 0
-  isClosedPath: 1
-  pathResolution: 10
-  pathMode: 2
-  lockRotation: 0
-  assignForwardAndUp: 0
-  forwardDirection: {x: 0, y: 0, z: 1}
-  upDirection: {x: 0, y: 1, z: 0}
-  tweenRigidbody: 0
-  wps:
-  - {x: 0.008276641, y: 5.2231045, z: 0}
-  - {x: -0.04295045, y: 1.9623117, z: 0}
-  fullWps: []
-  path:
-    wpLengths:
-    - 0
-    - 1.8731228
-    - 3.2611952
-    - 1.3883526
-    wps:
-    - {x: 0, y: 3.35, z: 0}
-    - {x: 0.008276641, y: 5.2231045, z: 0}
-    - {x: -0.04295045, y: 1.9623117, z: 0}
-    - {x: 0, y: 3.35, z: 0}
-    type: 0
-    subdivisionsXSegment: 10
-    subdivisions: 40
-    controlPoints: []
-    length: 6.5226707
-    isFinalized: 1
-    timesTable:
-    - 0
-    - 0.28717116
-    - 0.7871496
-    - 1
-    lengthsTable: []
-  inspectorMode: 0
-  pathType: 0
-  handlesType: 0
-  livePreview: 1
-  handlesDrawMode: 0
-  perspectiveHandleSize: 0.5
-  showIndexes: 1
-  showWpLength: 0
-  pathColor: {r: 1, g: 1, b: 1, a: 0.5}
-  lastSrcPosition: {x: 0, y: 3.35, z: 0}
-  lastSrcRotation: {x: 0, y: 0, z: 0, w: 1}
-  wpsDropdown: 0
-  dropToFloorOffset: 0
 --- !u!1 &4854208410307823464
 GameObject:
   m_ObjectHideFlags: 0

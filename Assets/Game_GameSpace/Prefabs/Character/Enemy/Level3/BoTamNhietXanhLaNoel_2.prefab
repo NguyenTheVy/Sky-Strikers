@@ -253,7 +253,7 @@ MonoBehaviour:
   circleCollider2D: {fileID: 0}
   isDead: 0
   hp: 1
-  maxHp: 6
+  maxHp: 15
   bloodObj: {fileID: 1429954232896169633, guid: aaf29ec033ba85b49acb9127e02a6f5b, type: 3}
   enemyType: 0
   health: {fileID: 0}
@@ -288,6 +288,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   fill: {fileID: 0}
+  cost: 0
   itemPrefab:
   - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
   - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}

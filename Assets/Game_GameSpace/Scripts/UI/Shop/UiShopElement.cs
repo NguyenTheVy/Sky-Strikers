@@ -27,7 +27,7 @@ public class UiShopElement : MonoBehaviour
     public void SetData(int id)
     {
         this.id = id;
-        cost = id * 100;
+        cost = id * 400;
         InitAir();
         UpdateView();
     }
@@ -74,7 +74,6 @@ public class UiShopElement : MonoBehaviour
         }
         else
         {
-            Debug.Log("thieu tien");
             AudioController.Instance.PlaySound(AudioController.Instance.cantBoughtItem);
 
         }

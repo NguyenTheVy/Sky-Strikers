@@ -280,8 +280,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UiLose, Assembly-CSharp
+      - m_Target: {fileID: 496670898}
+        m_TargetAssemblyTypeName: UIVictory, Assembly-CSharp
         m_MethodName: Home
         m_Mode: 1
         m_Arguments:
@@ -1418,8 +1418,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UiLose, Assembly-CSharp
+      - m_Target: {fileID: 496670898}
+        m_TargetAssemblyTypeName: UIVictory, Assembly-CSharp
         m_MethodName: Replay
         m_Mode: 1
         m_Arguments:
@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2cb44f2ba74d44feaa8292079e48c93d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 111d4f982ceb3429b821a87e5f3cc18a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3138,6 +3138,7 @@ GameObject:
   - component: {fileID: 1092323032}
   - component: {fileID: 1092323034}
   - component: {fileID: 1092323033}
+  - component: {fileID: 1092323035}
   m_Layer: 5
   m_Name: Coin
   m_TagString: Untagged
@@ -3204,6 +3205,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092323031}
   m_CullTransparentMesh: 1
+--- !u!114 &1092323035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092323031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a10d457b9dc84478e4f008fe86c5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1249116669}
+  cost: 500
 --- !u!1 &1131681925
 GameObject:
   m_ObjectHideFlags: 0

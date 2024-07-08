@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TigerForge;
 using UnityEngine;
 
-[RequireComponent(typeof(CircleCollider2D))]
+//[RequireComponent(typeof(EdgeCollider2D))]
 public abstract class DamageReceiver : MonoBehaviour
 {
 
