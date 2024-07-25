@@ -38,7 +38,6 @@ public class Air : BaseAir
         if (_timeBtwFire < 0)
         {
             _timeBtwFire = timeBtwFire;
-            // GameObject bulletClone = Instantiate(bulletPrefab, firePos.position, Quaternion.identity);
             SimplePool.Spawn(bulletPrefab.gameObject, firePos_1.position, Quaternion.identity);
 
             if (firePos_2.gameObject.activeInHierarchy)
@@ -50,10 +49,6 @@ public class Air : BaseAir
             if (firePos_5.gameObject.activeInHierarchy)
                 SimplePool.Spawn(bulletPrefab.gameObject, firePos_5.position, Quaternion.identity);
             AudioController.Instance.PlaySound(AudioController.Instance.shoot);
-
-
-            /*Rigidbody2D rb = bulletClone.GetComponent<Rigidbody2D>();
-            rb.AddForce(transform.up * bulletForce, ForceMode2D.Impulse);*/
         }
 
     }

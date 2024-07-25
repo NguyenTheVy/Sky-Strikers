@@ -37,7 +37,7 @@ public class BoxFormation : FormationBase {
         }
     }
 
-    private void GetCountEnemy()
+/*    private void GetCountEnemy()
     {
         if (_unitWidth < _unitDepth && _hollow == false && _nthOffset == 0.5)
         {
@@ -51,5 +51,5 @@ public class BoxFormation : FormationBase {
         {
             countEnemy = _unitDepth + (_unitWidth + _unitWidth) - 1;
         }
-    }
+    }*/
 }

@@ -12,7 +12,7 @@ public class BaseAir : MonoBehaviour
     private float playerHalfWidth, playerHalfHeight;
     
     
-    private void OnMouseDown()
+    /*private void OnMouseDown()
     {
         difference = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
     }
@@ -20,7 +20,7 @@ public class BaseAir : MonoBehaviour
     private void OnMouseDrag()
     {
         transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
-    }
+    }*/
 
     private void moveShip()
     {
@@ -47,7 +47,7 @@ public class BaseAir : MonoBehaviour
     {
         CheckLimitCam();
         FireBullet();
-        //moveShip();
+        
     }
 
     private void FixedUpdate()
@@ -73,7 +73,7 @@ public class BaseAir : MonoBehaviour
 
     void CheckLimitCam()
     {
-        //moveShip();
+        moveShip();
         // Lấy vị trí hiện tại của người chơi
         Vector3 currentPosition = transform.position;
 
@@ -93,7 +93,4 @@ public class BaseAir : MonoBehaviour
     {
 
     }
-
-
-
 }
