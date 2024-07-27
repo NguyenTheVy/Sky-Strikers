@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Game_Fly;
-public class ItemSheild : ItemDropBase
+public class ItemSheild : ItemDropBase  
 {
     [SerializeField] GameObject shield;
 
@@ -50,7 +50,7 @@ public class ItemSheild : ItemDropBase
         Destroy(gameObject); // Hủy shield sau khi hết thời gian
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         // Giả sử kẻ thù hoặc đạn có tag "Enemy" hoặc "Bullet"
         if (other.CompareTag(TagConst.BULLET) || other.CompareTag("Bullet"))
@@ -58,5 +58,5 @@ public class ItemSheild : ItemDropBase
             Destroy(other.gameObject); // Hủy đối tượng va chạm
             // Bạn có thể thêm hiệu ứng phá hủy ở đây
         }
-    }
+    }*/
 }

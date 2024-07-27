@@ -383,7 +383,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &2360622355819910672
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.4266666, y: 1.4266666}
+  m_Size: {x: 3, y: 3}
   m_Direction: 0
 --- !u!114 &8687019956519947206
 MonoBehaviour:
@@ -431,6 +431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeaf8960753467144abe83a96fd297eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveSpeed: 0
+  _rotateSpeed: 0
   firePos_1: {fileID: 5302112523870398449}
   firePos_2: {fileID: 5937701576988336984}
   firePos_3: {fileID: 1387849875124220744}
@@ -612,7 +614,7 @@ Transform:
   m_GameObject: {fileID: 5302112525049274781}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -798,6 +800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5302112524357322236}
     m_Modifications:
+    - target: {fileID: 673461524166471409, guid: bcc808caada023445a8865328cf6175d, type: 3}
+      propertyPath: m_LayerOverridePriority
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1717819110610704807, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -828,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7056068928787282702, guid: bcc808caada023445a8865328cf6175d, type: 3}
       propertyPath: m_LocalRotation.w

@@ -41,6 +41,8 @@ public class GamePlayManager : MonoBehaviour
 
     private void ActionWin()
     {
+        SkillController.Instance.ResetSkills();
+
         //int index = PlayerDataManager.Instance.GetIndexWave() + 1;
         //PlayerDataManager.Instance.SetIndexWave(index);
         GameManager.Instance.UiController.OpenUiWinWave();

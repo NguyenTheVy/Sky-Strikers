@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _noise: 0
-  Spread: 1.6
+  Spread: 1.3
   _unitWidth: 5
   _unitDepth: 4
   _hollow: 0

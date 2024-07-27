@@ -23,6 +23,7 @@ public class PlayerDamReceiver : DamageReceiver
 
     protected override void OnDead()
     {
+        if (GameManager.Instance.gamePlayManager.isWin) return;
         Instantiate(bloodObj, transform.position, Quaternion.identity);
         AudioController.Instance.PlaySound(AudioController.Instance.gameover);
         transform.parent.gameObject.SetActive(false);

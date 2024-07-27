@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 00f9a2599f95e2c4c9c11ae87202e717, type: 3}
       propertyPath: m_bulletNum
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 00f9a2599f95e2c4c9c11ae87202e717, type: 3}
       propertyPath: m_bulletSpeed
@@ -1212,7 +1212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: db2e655b68d9a0749a249c163b5f6e62, type: 3}
       propertyPath: m_bulletNum
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: db2e655b68d9a0749a249c163b5f6e62, type: 3}
       propertyPath: m_bulletSpeed
@@ -1358,11 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cc38c4b627493d14d8b8e9f6c184adab, type: 3}
       propertyPath: m_bulletNum
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cc38c4b627493d14d8b8e9f6c184adab, type: 3}
       propertyPath: m_bulletSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: cc38c4b627493d14d8b8e9f6c184adab, type: 3}
       propertyPath: m_bulletPrefab

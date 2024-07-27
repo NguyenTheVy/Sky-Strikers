@@ -2498,7 +2498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -1009.0001}
+  m_AnchoredPosition: {x: 0, y: -2171}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &623203724
@@ -2546,7 +2546,7 @@ MonoBehaviour:
   targetIsSelf: 1
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
-  delay: 0.5
+  delay: 0
   duration: 1
   easeType: 6
   easeCurve:
@@ -6074,6 +6074,7 @@ MonoBehaviour:
   win: {fileID: 8300000, guid: 3d475f41ed54036469d64e875f18d707, type: 3}
   boughtItem: {fileID: 8300000, guid: 23ce41b8df83f2c41b28e18a7e33bcc2, type: 3}
   cantBoughtItem: {fileID: 8300000, guid: 075a03725fdf3554db080912da62392d, type: 3}
+  skill: {fileID: 8300000, guid: a1b961faebba4474a8057f229899a411, type: 3}
   click: {fileID: 8300000, guid: 0f3ed6a6c5aee8f40b5a95715a280fca, type: 3}
   backgroundMusics:
   - {fileID: 8300000, guid: 013e2d4cb9610964c8ec8042ebb1227b, type: 3}
@@ -6598,7 +6599,7 @@ Transform:
   m_GameObject: {fileID: 1723181946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.98, z: 0}
+  m_LocalPosition: {x: 0, y: -10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7777,7 +7778,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.2, z: 0}
-  m_LocalScale: {x: 0.65, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1848654863}

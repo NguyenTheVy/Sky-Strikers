@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Game_Fly;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,22 +11,64 @@ public class BaseAir : MonoBehaviour
     private Camera mainCamera;
     private float minX, maxX, minY, maxY;
     private float playerHalfWidth, playerHalfHeight;
-    
-    
-    /*private void OnMouseDown()
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _rotateSpeed;
+    private int activeTouchId = -1;
+
+
+    private void OnMouseDown()
     {
+        if (GameManager.Instance.gamePlayManager.isWin) return;
         difference = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
     }
 
     private void OnMouseDrag()
     {
+        if (GameManager.Instance.gamePlayManager.isWin) return;
         transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
-    }*/
-
-    private void moveShip()
-    {
-        transform.position = (Vector2)mainCamera.ScreenToWorldPoint(Input.mousePosition) - difference;
     }
+    private void HandleTouch()
+    {
+        if (GameManager.Instance.gamePlayManager.isWin) return;
+        if (Input.touchCount > 0)
+        {
+            for (int i = 0; i < Input.touchCount; i++)
+            {
+                Touch touch = Input.GetTouch(i);
+
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        Vector2 touchPosition = mainCamera.ScreenToWorldPoint(touch.position);
+                        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPosition))
+                        {
+                            activeTouchId = touch.fingerId;
+                            difference = touchPosition - (Vector2)transform.position;
+                        }
+                        break;
+
+                    case TouchPhase.Moved:
+                        if (touch.fingerId == activeTouchId)
+                        {
+                            Vector2 newPosition = (Vector2)mainCamera.ScreenToWorldPoint(touch.position) - difference;
+                            transform.position = new Vector3(newPosition.x, newPosition.y, transform.position.z);
+                        }
+                        break;
+
+                    case TouchPhase.Ended:
+                    case TouchPhase.Canceled:
+                        if (touch.fingerId == activeTouchId)
+                        {
+                            activeTouchId = -1;
+                        }
+                        break;
+                }
+            }
+        }
+    }
+
+
+
 
     private void Start()
     {
@@ -73,7 +116,8 @@ public class BaseAir : MonoBehaviour
 
     void CheckLimitCam()
     {
-        moveShip();
+
+        //HandleTouch();
         // Lấy vị trí hiện tại của người chơi
         Vector3 currentPosition = transform.position;
 

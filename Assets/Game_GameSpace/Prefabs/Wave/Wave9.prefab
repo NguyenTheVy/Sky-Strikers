@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _noise: 0
-  Spread: 2.5
+  Spread: 2.2
   _amount: 20
   _radius: 0.3
   _radiusGrowthMultiplier: 0

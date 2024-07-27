@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3306623217728328914}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1200005929
 MonoBehaviour:
@@ -55,8 +55,8 @@ MonoBehaviour:
   - {fileID: 2666800497421761868, guid: 573b66d906be2ea44b75439b89a9a76e, type: 3}
   - {fileID: 382321509568621527, guid: a73cee944645a1c4c8065cd60a4b9884, type: 3}
   spawnInterval: 0.5
-  minpPosX: -4
-  maxPosX: 4
+  minpPosX: -3
+  maxPosX: 3
   posY: 8.5
   countEnemy: 10
 --- !u!114 &2000232170964583972

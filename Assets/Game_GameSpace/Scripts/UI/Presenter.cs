@@ -1,11 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TigerForge;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class Presenter : MonoBehaviour
 {
@@ -50,6 +50,7 @@ public class Presenter : MonoBehaviour
     {
         player = GameObject.Instantiate(prefabPlayer, transform);
         player.transform.localPosition = Vector3.zero;
+        
     }
 
     private void OnNext()

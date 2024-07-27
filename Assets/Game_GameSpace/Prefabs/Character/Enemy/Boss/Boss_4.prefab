@@ -425,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 1948541789902860105}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1100,11 +1100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 81a4e133c74be144d9707277f7b9e0e3, type: 3}
       propertyPath: m_bulletNum
-      value: 200
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 81a4e133c74be144d9707277f7b9e0e3, type: 3}
       propertyPath: m_bulletSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 81a4e133c74be144d9707277f7b9e0e3, type: 3}
       propertyPath: m_bulletPrefab
@@ -1173,7 +1173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d0f51197cc2d5d2459c993224fbe050b, type: 3}
       propertyPath: m_bulletNum
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d0f51197cc2d5d2459c993224fbe050b, type: 3}
       propertyPath: m_bulletSpeed

@@ -13,10 +13,10 @@ public class UIGamePlay : UICanvas
     [Title("Button")] [SerializeField] private Button btnHide;
     [SerializeField] private Button btnPlayGame;
     [SerializeField] private Button btnExit;
-
+    private PlayerDamReceiver PlayerDamReceiver;
     private bool isFistOpen;
     [SerializeField]
-    private Text txtHp, txtLevel;
+    private Text txtHp, bulletText;
     public int countBullet = 1;
 
     protected override void Awake()
@@ -25,6 +25,7 @@ public class UIGamePlay : UICanvas
             Ins = this;
         else
             Destroy(gameObject);
+        
     }
 
     // Start is called before the first frame update
@@ -32,7 +33,11 @@ public class UIGamePlay : UICanvas
     {
         Init();
         SetDefaultTxtBulletPlayer();
+        PlayerDamReceiver = FindObjectOfType<PlayerDamReceiver>();
+        UpdateHPPLayer();
     }
+
+    
 
     private void OnEnable()
     {
@@ -42,19 +47,22 @@ public class UIGamePlay : UICanvas
 
     private void SetDefaultTxtBulletPlayer()
     {
-        txtLevel.text = countBullet.ToString();
+        bulletText.text = countBullet.ToString();
     }
 
     private void UpdateHPPLayer()
     {
-        txtHp.text = EventManager.GetFloat(EventConstants.UPDATE_HP_PLAYER).ToString();
+        //EventManager.SetData(EventConstants.UPDATE_HP_PLAYER, PlayerDamReceiver.MaxHp);
+        txtHp.text = PlayerDamReceiver.Hp.ToString();
+        //txtHp.text = EventManager.GetFloat(EventConstants.UPDATE_HP_PLAYER).ToString();
+
     }
 
     public void UpdateLVPlayer()
     {
         if (countBullet >= 5) return;
         countBullet++;
-        txtLevel.text = countBullet.ToString();
+        bulletText.text = countBullet.ToString();
     }
 
     private void Exit()

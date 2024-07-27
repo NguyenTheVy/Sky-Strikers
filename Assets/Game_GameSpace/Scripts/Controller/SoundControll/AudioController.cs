@@ -29,6 +29,8 @@ public class AudioController : Singleton<AudioController>
     public AudioClip win;
     public AudioClip boughtItem;
     public AudioClip cantBoughtItem;
+    public AudioClip skill;
+
 
 
     public AudioClip click; 

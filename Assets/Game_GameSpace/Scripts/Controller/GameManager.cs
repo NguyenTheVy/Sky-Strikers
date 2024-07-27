@@ -46,6 +46,8 @@ namespace Game_Fly
             levelPlaying = PlayerDataManager.Instance.GetChooseIndexLevel();
         }
 
+        
+
         public void IncreaseLevel(int level)
         {
             if (DataLevel.GetLevel() == totalLevel)
